@@ -29,23 +29,55 @@
     html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
     .wrap{max-width:1000px;margin:0 auto;padding:40px 20px}
     /* HEADER */
-    .hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:6px 0 24px}
-    .logo{width:220px;max-width:70%;height:auto;margin-bottom:10px}
-    h1{font-size:38px;line-height:1.2;margin:0 0 6px;color:var(--navy);letter-spacing:.2px}
-    .tag{font-size:18px;color:#334155;margin:0}
+h1{
+  font-size:42px;
+  margin:6px 0 8px;
+  color:var(--navy)
+}
+.tag{
+  font-size:20px;
+  margin:0 0 14px
+}
 
-    /* CONTENT CARDS */
-    .grid{display:grid;gap:22px;margin:28px 0}
-    .card{background:var(--card);border-radius:16px;padding:24px 22px;box-shadow:0 10px 26px rgba(10,46,92,.09)}
-    h2{font-size:22px;margin:0 0 12px;color:var(--navy)}
-    ul{margin:0 0 0 18px}
-    li{margin:2px 0}
+/* CONTENT CARDS */
+.grid{
+  display:grid;
+  gap:26px;
+  margin:32px 0
+}
+.card{
+  background:var(--card);
+  border-radius:18px;
+  padding:28px;
+  box-shadow:0 12px 30px rgba(10,46,92,.08)
+}
+h2{
+  font-size:24px;
+  margin:0 0 12px;
+  color:var(--navy)
+}
+li{margin:4px 0}
 
-    /* CTA */
-    .cta{text-align:center;margin:26px 0 4px}
-    .btn{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;padding:12px 20px;border-radius:12px;font-weight:700}
-    .btn:hover{opacity:.9}
-    .muted{color:var(--muted);font-size:14px;text-align:center;margin-top:22px}
+/* CTA */
+.cta{
+  text-align:center;
+  margin:22px 0 6px
+}
+.btn{
+  display:inline-block;
+  background:var(--navy);
+  color:#fff;
+  text-decoration:none;
+  padding:14px 22px;
+  border-radius:12px;
+  font-weight:700
+75   .muted{
+76     color: var(--muted);
+77     font-size: 14px;
+78     text-align: center;
+79     margin-top: 22px;
+80   }
+
 
     /* FOOTER */
     .footer{margin:40px 0 0;color:var(--muted);font-size:14px;text-align:center}
@@ -65,6 +97,12 @@
       <img src="/assets/header.png" alt="Bridge29 Solutions" class="logo">
       <h1>Bridge29 Solutions</h1>
       <p class="tag">Your partner for seamless project delivery across borders</p>
+
+<div class="cta">
+  <a class="btn" href="#contact">Get in Touch</a>
+</div>
+
+      
     </header>
 
     <section class="grid">
@@ -88,7 +126,7 @@
         </ul>
       </article>
 
-      <article class="card">
+     124   <article id="contact" class="card">
         <h2>Contact</h2>
         <p class="muted" style="text-align:left;margin-top:-6px">
           1970 San Pablo Avenue #5 · Berkeley, CA 94702 · <a href="mailto:edgar@bridge29solutions.com">edgar@bridge29solutions.com</a>
