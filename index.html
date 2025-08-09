@@ -6,10 +6,12 @@
   <title>Bridge29 Solutions — Project Delivery Across Borders</title>
   <meta name="description" content="Bridge29 Solutions provides owner’s representation and project management across the U.S. and the Philippines.">
   <link rel="icon" href="/assets/favicon.png" type="image/png">
+
   <!-- Brand font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <!-- Social share -->
   <meta property="og:title" content="Bridge29 Solutions">
   <meta property="og:description" content="Your partner for seamless project delivery across borders.">
@@ -26,65 +28,53 @@
       --muted:#6b7280;       /* secondary text */
     }
     *{box-sizing:border-box}
-html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;scroll-behavior:smooth}
+    html,body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      scroll-behavior:smooth;
+    }
     .wrap{max-width:1000px;margin:0 auto;padding:40px 20px}
+
     /* HEADER */
-h1{
-  font-size:42px;
-  margin:6px 0 8px;
-  color:var(--navy)
-}
-.logo{max-width:220px;height:auto;display:block;margin:0 auto 10px;}
+    .hero{text-align:center;padding:6px 0 24px}
+    .logo{max-width:220px;height:auto;display:block;margin:0 auto 10px}
+    h1{font-size:42px;margin:6px 0 8px;color:var(--navy)}
+    .tag{font-size:20px;margin:0 0 14px}
 
+    /* CONTENT CARDS */
+    .grid{display:grid;gap:26px;margin:32px 0}
+    .card{
+      background:var(--card);
+      border-radius:18px;
+      padding:28px;
+      box-shadow:0 12px 30px rgba(10,46,92,.08)
+    }
+    h2{font-size:24px;margin:0 0 12px;color:var(--navy)}
+    li{margin:4px 0}
 
+    /* CTA */
+    .cta{text-align:center;margin:22px 0 6px}
+    .btn{
+      display:inline-block;
+      background:var(--navy);
+      color:#fff;
+      text-decoration:none;
+      padding:14px 22px;
+      border-radius:12px;
+      font-weight:700;
+    }
+    .btn:hover{opacity:.9}
+    .muted{
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+      margin-top: 22px;
+    }
 
-.tag{
-  font-size:20px;
-  margin:0 0 14px
-}
-
-/* CONTENT CARDS */
-.grid{
-  display:grid;
-  gap:26px;
-  margin:32px 0
-}
-.card{
-  background:var(--card);
-  border-radius:18px;
-  padding:28px;
-  box-shadow:0 12px 30px rgba(10,46,92,.08)
-}
-h2{
-  font-size:24px;
-  margin:0 0 12px;
-  color:var(--navy)
-}
-li{margin:4px 0}
-
-/* CTA */
-.cta{
-  text-align:center;
-  margin:22px 0 6px
-}
-.btn{
-  display:inline-block;
-  background:var(--navy);
-  color:#fff;
-  text-decoration:none;
-  padding:14px 22px;
-  border-radius:12px;
-  font-weight:700;
-}
-.muted{
-  color: var(--muted);
-  font-size: 14px;
-  text-align: center;
-  margin-top: 22px;
-iframe{width:100%;border:0;}
-
-
-}
+    /* EMBEDS */
+    iframe{width:100%;border:0;}
 
     /* FOOTER */
     .footer{margin:40px 0 0;color:var(--muted);font-size:14px;text-align:center}
@@ -95,6 +85,7 @@ iframe{width:100%;border:0;}
       .card{padding:18px}
     }
   </style>
+
   <script async src="https://tally.so/widgets/embed.js"></script>
 </head>
 <body>
@@ -104,12 +95,9 @@ iframe{width:100%;border:0;}
       <img src="/assets/header.png" alt="Bridge29 Solutions" class="logo">
       <h1>Bridge29 Solutions</h1>
       <p class="tag">Your partner for seamless project delivery across borders</p>
-
-<div class="cta">
-  <a class="btn" href="#contact">Get in Touch</a>
-</div>
-
-      
+      <div class="cta">
+        <a class="btn" href="#contact">Get in Touch</a>
+      </div>
     </header>
 
     <section class="grid">
@@ -133,8 +121,7 @@ iframe{width:100%;border:0;}
         </ul>
       </article>
 
-     <article id="contact" class="card">
-
+      <article id="contact" class="card">
         <!-- Tally form embedded, styled to match -->
         <iframe
           data-tally-src="https://tally.so/embed/mJ4bo4?hideTitle=1&transparentBackground=1&dynamicHeight=1"
