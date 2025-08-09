@@ -4,32 +4,65 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Bridge29 Solutions — Project Delivery Across Borders</title>
-  <meta name="description" content="Bridge29 Solutions — project management consulting across the U.S. and the Philippines.">
+  <meta name="description" content="Bridge29 Solutions provides owner’s representation and project management across the U.S. and the Philippines.">
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
+  <!-- Brand font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Social share -->
+  <meta property="og:title" content="Bridge29 Solutions">
+  <meta property="og:description" content="Your partner for seamless project delivery across borders.">
+  <meta property="og:image" content="https://emaxion.github.io/assets/header.png">
+  <meta property="og:type" content="website">
+
   <style>
-    :root{--navy:#0A2E5C;--gold:#D4AF37;--ink:#1f2937;--bg:#faf7eb;--card:#ffffff}
+    :root{
+      --navy:#0A2E5C;        /* primary */
+      --gold:#D4AF37;        /* accent */
+      --ink:#1f2937;         /* body text */
+      --bg:#FAF7EB;          /* page */
+      --card:#ffffff;        /* panels */
+      --muted:#6b7280;       /* secondary text */
+    }
     *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
-    .wrap{max-width:960px;margin:0 auto;padding:40px 20px}
-    .hero{text-align:center;padding:10px 0 28px}
-    .logo{width:240px;max-width:70%;height:auto;margin:0 auto 14px;display:block}
-    h1{font-size:36px;margin:0 0 6px;color:var(--navy)}
-    .tag{font-size:18px;margin:0;color:#334155}
+    html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .wrap{max-width:1000px;margin:0 auto;padding:40px 20px}
+    /* HEADER */
+    .hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:6px 0 24px}
+    .logo{width:220px;max-width:70%;height:auto;margin-bottom:10px}
+    h1{font-size:38px;line-height:1.2;margin:0 0 6px;color:var(--navy);letter-spacing:.2px}
+    .tag{font-size:18px;color:#334155;margin:0}
+
+    /* CONTENT CARDS */
     .grid{display:grid;gap:22px;margin:28px 0}
-    .card{background:var(--card);border-radius:16px;padding:22px 22px;box-shadow:0 8px 22px rgba(10,46,92,.08)}
-    h2{font-size:22px;margin:0 0 10px;color:var(--navy)}
+    .card{background:var(--card);border-radius:16px;padding:24px 22px;box-shadow:0 10px 26px rgba(10,46,92,.09)}
+    h2{font-size:22px;margin:0 0 12px;color:var(--navy)}
     ul{margin:0 0 0 18px}
-    .cta{margin:26px 0 6px;text-align:center}
-    .btn{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;padding:12px 18px;border-radius:10px;font-weight:600}
-    .footer{margin:36px 0 0;color:#6b7280;font-size:14px;text-align:center}
-    iframe{border:0;width:100%}
+    li{margin:2px 0}
+
+    /* CTA */
+    .cta{text-align:center;margin:26px 0 4px}
+    .btn{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;padding:12px 20px;border-radius:12px;font-weight:700}
+    .btn:hover{opacity:.9}
+    .muted{color:var(--muted);font-size:14px;text-align:center;margin-top:22px}
+
+    /* FOOTER */
+    .footer{margin:40px 0 0;color:var(--muted);font-size:14px;text-align:center}
+
+    /* MOBILE */
+    @media (max-width:640px){
+      h1{font-size:30px}
+      .card{padding:18px}
+    }
   </style>
   <script async src="https://tally.so/widgets/embed.js"></script>
 </head>
 <body>
   <main class="wrap">
     <header class="hero">
-      <!-- Replace /assets/header.png with your header image or logo (next step) -->
-      <img src="/assets/header.png" alt="Bridge29 Solutions" class="logo" />
+      <!-- Upload /assets/header.png (logo or a logo+title graphic) -->
+      <img src="/assets/header.png" alt="Bridge29 Solutions" class="logo">
       <h1>Bridge29 Solutions</h1>
       <p class="tag">Your partner for seamless project delivery across borders</p>
     </header>
@@ -57,12 +90,20 @@
 
       <article class="card">
         <h2>Contact</h2>
-        <!-- Your existing Tally form, nicely embedded -->
+        <p class="muted" style="text-align:left;margin-top:-6px">
+          1970 San Pablo Avenue #5 · Berkeley, CA 94702 · <a href="mailto:edgar@bridge29solutions.com">edgar@bridge29solutions.com</a>
+        </p>
+
+        <!-- Tally form embedded, styled to match -->
         <iframe
           data-tally-src="https://tally.so/embed/mJ4bo4?hideTitle=1&transparentBackground=1&dynamicHeight=1"
           loading="lazy" title="Contact Bridge29" height="420"></iframe>
         <script>window.Tally&&Tally.loadEmbeds&&Tally.loadEmbeds();</script>
-        <p class="cta">Prefer email? <a href="mailto:edgar@bridge29solutions.com">edgar@bridge29solutions.com</a></p>
+
+        <div class="cta">
+          <a class="btn" href="mailto:edgar@bridge29solutions.com">Email Us Directly</a>
+        </div>
+        <p class="muted">Prefer a call? Reply to our email with your availability and location (U.S. or Philippines).</p>
       </article>
     </section>
 
@@ -70,4 +111,3 @@
   </main>
 </body>
 </html>
-
