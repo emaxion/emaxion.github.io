@@ -26,7 +26,7 @@
       --muted:#6b7280;       /* secondary text */
     }
     *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;scroll-behavior:smooth}
     .wrap{max-width:1000px;margin:0 auto;padding:40px 20px}
     /* HEADER */
 h1{
@@ -34,6 +34,10 @@ h1{
   margin:6px 0 8px;
   color:var(--navy)
 }
+.logo{max-width:220px;height:auto;display:block;margin:0 auto 10px;}
+
+
+
 .tag{
   font-size:20px;
   margin:0 0 14px
@@ -70,14 +74,17 @@ li{margin:4px 0}
   text-decoration:none;
   padding:14px 22px;
   border-radius:12px;
-  font-weight:700
-75   .muted{
-76     color: var(--muted);
-77     font-size: 14px;
-78     text-align: center;
-79     margin-top: 22px;
-80   }
+  font-weight:700;
+}
+.muted{
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 22px;
+iframe{width:100%;border:0;}
 
+
+}
 
     /* FOOTER */
     .footer{margin:40px 0 0;color:var(--muted);font-size:14px;text-align:center}
@@ -131,7 +138,7 @@ li{margin:4px 0}
         <!-- Tally form embedded, styled to match -->
         <iframe
           data-tally-src="https://tally.so/embed/mJ4bo4?hideTitle=1&transparentBackground=1&dynamicHeight=1"
-          loading="lazy" title="Contact Bridge29" height="420"></iframe>
+          loading="lazy" title="Contact Bridge29" height="520"></iframe>
         <script>window.Tally&&Tally.loadEmbeds&&Tally.loadEmbeds();</script>
 
         <div class="cta">
